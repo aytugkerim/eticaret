@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meteor Goods</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ac7ea29e1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<!--  Start Header -->
+	<header>
+		<div class="custom-nav-container d-flex align-items-center justify-content-between px-2 py-3 shadow-sm">
+			<a href="index.html" class="text-clipped navbar-brand">
+				<i class="fas fa-meteor d-flex">
+					<span class="m-auto">Meteor</span>
+				</i>
+			</a>
+
+			<div class="main-nav-outer d-flex">
+				<i class="fas fa-times text-clipped menu-close-icon d-lg-none"></i>
+				<nav class="main-nav navbar navbar-light navbar-expand-lg text-center m-auto">
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Home</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="#" class="nav-link">Men</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="#" class="nav-link">Women</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="#" class="nav-link">Kids</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="#" class="nav-link">New arrivals</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="#" class="nav-link">Sale</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="nav-icons-container d-flex justify-content-between">
+				<div class="nav-icons px-2">
+					<a href="#">
+						<i class="fas fa-search text-clipped"></i>
+					</a>
+				</div>
+				<div class="nav-icons px-2">
+					<a href="cart.html">
+						<i class="fas fa-shopping-bag bag-item-count text-clipped"></i>
+						<span class="badge">2</span>
+					</a>
+				</div>
+
+				<div class="nav-icons px-3 mr-3">
+					<div class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="fas fa-user text-clipped"></i>
+						</a>
+						<div class="dropdown-menu">
+							<form action="" class="p-2 text-secondary">
+								<div class="form-group">
+									<input type="email" class="form-control" placeholder="Enter email" required>
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Enter password" required>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="dropdown-checkbox">
+									<label for="dropdown-checkbox" class="form-check-label">
+										Remember me
+									</label>
+								</div>
+								<button type="submit" class="btn btn-bg my-2">Login</button>
+							</form>
+							<div class="dropdown-divider mt-0"></div>
+							<a href="#" class="dropdown-item">Don't have an account? Sign up</a>
+							<a href="#" class="dropdown-item">Forgot your password? Reset now</a>
+						</div>
+					</div>
+				</div>
+				<div class="nav-icons px-3 d-lg-none">
+					<i class="fas fa-bars open-menu-icon text-clipped"></i>
+				</div>
+			</div>
+		</div>
+
+		<!-- Start Promotions -->
+		<div class="promotions text-white text-center py-2 mb-5">
+			<span>
+				<span class="text-uppercase font-weight-bold">
+					Free Shipping
+				</span>
+				on orders of $100 or more!
+			</span>
+		</div>
+		<!-- End Promations -->
+
+		<!-- Start Carousel -->
+		<div class="container">
+			<div class="carousel slide" id="carousel-indicators" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li class="active" data-target="#carousel-indicators" data-slide-to="0"></li>
+					<li data-target="#carousel-indicators" data-slide-to="1"></li>
+					<li data-target="#carousel-indicators" data-slide-to="2"></li>
+				</ol>
+
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<a href="#">
+							<img class="img-fluid d-md-none" src="images/carousel/carousel-img-1-mobile.jpeg" alt="">
+							<img class="img-fluid d-none d-md-block" src="images/carousel/carousel-img-1.jpeg" alt="">
+						</a>
+					</div>
+
+					<div class="carousel-item">
+						<a href="#">
+							<img class="img-fluid d-md-none" src="images/carousel/carousel-img-2-mobile.jpg" alt="">
+							<img class="img-fluid d-none d-md-block" src="images/carousel/carousel-img-2.jpg" alt="">
+						</a>
+					</div>
+
+					<div class="carousel-item">
+						<a href="#">
+							<img class="img-fluid d-md-none" src="images/carousel/carousel-img-3-mobile.jpeg" alt="">
+							<img class="img-fluid d-none d-md-block" src="images/carousel/carousel-img-3.jpeg" alt="">
+						</a>
+					</div>
+				</div>
+				<a href="#carousel-indicators" role="button" data-slide="prev" class="carousel-control-prev"><i class="fas fa-chevron-left text-clipped"></i></a>
+				<a href="#carousel-indicators" role="button" data-slide="next" class="carousel-control-next"><i class="fas fa-chevron-right text-clipped"></i></a>
+			</div>
+		</div>
+		<!-- End Carousel -->
+	</header>
+	<!--  End Header -->
+
+	<!-- Brands -->
+	<section class="featured-brands">
+		<div class="container">
+			<div class="row align-items-center text-center">
+				<div class="col-12 col-sm-6 col-md-2 mb-5">
+					<a href="#">
+						<img src="images/brands/nike.svg" alt="">
+					</a>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-2 mb-5">
+					<a href="#">
+						<img src="images/brands/jordan.svg" alt="">
+					</a>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-2 mb-5">
+					<a href="#">
+						<img src="images/brands/adidas.svg" alt="">
+					</a>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-2 mb-5">
+					<a href="#">
+						<img src="images/brands/under-armour.svg" alt="">
+					</a>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-2 mb-5">
+					<a href="#">
+						<img src="images/brands/vans.svg" alt="">
+					</a>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-2 mb-5">
+					<a href="#">
+						<img src="images/brands/puma.svg" alt="">
+					</a>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<!-- End Brands -->
+
+	<!-- Women's Collection -->
+	<section class="women-collection pt-0">
+		<div class="container">
+			<div class="section-heading text-center mb-5">
+				<h1 class="text-clipped text-uppercase">Women's Collection</h1>
+				<p class="text-secondary">Shop the newest trends</p>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-md-6 hero-img">
+					<a href="#">
+						<img src="images/hero/hero1.jpg" alt="">
+					</a>
+					<div class="mt-2">
+						<a href="#">
+							<span class="text-uppercase font-weight-bold">Women's Nike Air Max</span> <br>
+							<span>Shop now</span> <i class="fas fa-caret-right"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 hero-img">
+					<a href="#">
+						<img src="images/hero/hero2.jpg" alt="">
+					</a>
+					<div class="mt-2">
+						<a href="#">
+							<span class="text-uppercase font-weight-bold">Women's Nike Air Max</span> <br>
+							<span>Shop now</span> <i class="fas fa-caret-right"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 hero-img">
+					<a href="#">
+						<img src="images/hero/hero3.jpg" alt="">
+					</a>
+					<div class="mt-2">
+						<a href="#">
+							<span class="text-uppercase font-weight-bold">Women's Nike Air Max</span> <br>
+							<span>Shop now</span> <i class="fas fa-caret-right"></i>
+						</a>
+					</div>
+				</div>	
+
+				<div class="col-12 col-md-6 hero-img">
+					<a href="#">
+						<img src="images/hero/hero4.jpg" alt="">
+					</a>
+					<div class="mt-2">
+						<a href="#">
+							<span class="text-uppercase font-weight-bold">Women's Nike Air Max</span> <br>
+							<span>Shop now</span> <i class="fas fa-caret-right"></i>
+						</a>
+					</div>
+				</div>							
+
+			</div>
+		</div>
+	</section>
+	<!-- End Women's Collection -->
+
+	<!-- New arrivals -->
+	<section class="arrivals">
+		<div class="container">
+			<div class="section-heading text-center mb-5">
+				<h1 class="text-clipped text-uppercase">The latest and greatest shoes</h1>
+				<p class="text-secondary">Shop the newest releases</p>
+			</div>
+
+			<div class="row text-center">
+				<div class="col-12 col-sm-6 col-md-3 mb-3">
+					<div class="new-arrival-img mb-3">
+						<img src="images/shoes/shoe1.jpg" alt="">
+					</div>
+					<a href="#">
+						<span class="text-uppercase font-weight-bold">Nike Air Max</span> <br>
+						<span>Shop now</span> <i class="fas fa-caret-right"></i>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 mb-3">
+					<div class="new-arrival-img mb-3">
+						<img src="images/shoes/shoe2.jpg" alt="">
+					</div>
+					<a href="#">
+						<span class="text-uppercase font-weight-bold">Nike Air Max</span> <br>
+						<span>Shop now</span> <i class="fas fa-caret-right"></i>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 mb-3">
+					<div class="new-arrival-img mb-3">
+						<img src="images/shoes/shoe3.jpg" alt="">
+					</div>
+					<a href="#">
+						<span class="text-uppercase font-weight-bold">Nike Air Max</span> <br>
+						<span>Shop now</span> <i class="fas fa-caret-right"></i>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 mb-3">
+					<div class="new-arrival-img mb-3">
+						<img src="images/shoes/shoe4.jpg" alt="">
+					</div>
+					<a href="#">
+						<span class="text-uppercase font-weight-bold">Nike Air Max</span> <br>
+						<span>Shop now</span> <i class="fas fa-caret-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--  End New arrivals -->
+
+	<!--  Services -->
+	<section class="our-services">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-12 col-sm-6 col-md-3 mb-5">
+					<div class="our-services-icon d-flex mb-3 mx-auto">
+						<i class="fas fa-shipping-fast text-clipped m-auto"></i>
+					</div>
+					<div class="our-services-description">
+						<h5 class="text-uppercase font-weight-bold">Free wouldwide shipping</h5>
+						<p>Free shipping for all orders over $100</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 mb-5">
+					<div class="our-services-icon d-flex mb-3 mx-auto">
+						<i class="fas fa-sync text-clipped m-auto"></i>
+					</div>
+					<div class="our-services-description">
+						<h5 class="text-uppercase font-weight-bold">Money back guarantee</h5>
+						<p>We return money within 30 days of purchase</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 mb-5">
+					<div class="our-services-icon d-flex mb-3 mx-auto">
+						<i class="fas fa-headset text-clipped m-auto"></i>
+					</div>
+					<div class="our-services-description">
+						<h5 class="text-uppercase font-weight-bold">24/7 customer support</h5>
+						<p>On demand 24/7 customer support</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 mb-5">
+					<div class="our-services-icon d-flex mb-3 mx-auto">
+						<i class="fas fa-credit-card text-clipped m-auto"></i>
+					</div>
+					<div class="our-services-description">
+						<h5 class="text-uppercase font-weight-bold">Secure online payments</h5>
+						<p>We use top of the line data encryption</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--  End Services -->
+
+	<!--  Start Footer -->
+	<footer class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<address>
+						<strong class="h3 font-weight-normal">Meteor Goods</strong> <br>
+						1234 Example Street <br>
+						Antartica, Example 0987
+						Phone: (231) 344-2345
+					</address>
+				</div>
+
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="footer-title">
+						<h5>Our Mission</h5>
+						<span class="custom-border"></span>
+					</div>
+
+					<ul class="footer-list">
+						<li>
+							<a href="#" class="footer-link">Company Values</a>
+						</li>
+						<li>
+							<a href="#" class="footer-link">Youth Foundation</a>
+						</li>
+						<li>
+							<a href="#" class="footer-link">Careers</a>
+						</li>
+						<li>
+							<a href="#" class="footer-link">Affiliate Program</a>
+						</li>
+						<li>
+							<a href="#" class="footer-link">Blog</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="footer-title">
+						<h5>Customer Center</h5>
+						<span class="custom-border"></span>
+					</div>
+
+					<ul class="footer-list">
+						<li>
+							<a href="#" class="footer-link">My Account</a>
+						</li>
+						<li>
+							<a href="#" class="footer-link">Shipping Rates & Policies</a>
+						</li>
+						<li>
+							<a href="#" class="footer-link">Refunds & Returns</a>
+						</li>
+						<li>
+							<a href="#" class="footer-link">FAQ</a>
+						</li>
+						<li>
+							<a href="#" class="footer-link">Delivery Info</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="w-100 d-md-flex justify-content-between align-items-center text-center">
+					<div class="order-2 mt-5">
+						<a class="footer-link" href="#">About</a>
+						<a class="footer-link ml-3" href="#">Help & Info</a>
+						<a class="footer-link ml-3" href="#">Privacy Policy</a>
+					</div>
+					<div>
+						<p class="m-0 text-sm order-1 mt-5">
+						&copy; 2019 Meteor Goods. All rights reserved.
+					</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--  End Footer -->
+
+<script src="vendors/jquery-3.3.1.slim.min.js"></script>
+<script src="vendors/popper.min.js"></script>
+<script src="vendors/bootstrap.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
